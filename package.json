@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bailez/tt-bot/issues"
   },
-  "homepage": "https://github.com/bailez/tt-bot#readme"
+  "homepage": "https://github.com/bailez/tt-bot#readme",
+  "dependencies": {
+    "twt": "^0.10.4"
+  }
 }
