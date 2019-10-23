@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/bailez/tt-bot#readme",
   "dependencies": {
+    "firebase": "^7.2.1",
+    "firebase-admin": "^8.6.1",
+    "twitter": "^1.7.1",
     "twt": "^0.10.4"
   }
 }

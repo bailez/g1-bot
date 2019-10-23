@@ -1,15 +1,8 @@
 const config = require('./config')
-const twit = require('twit')
-const Twitter = new twit(config)
-
-console.log('Hello World')
-
-functon retweet()
-{
-    let params={
-        q:'#got',
-        result_type: 'recent',
-        count: 100
-    }
-    
-}
+var Twitter = require('twitter')
+var client = new Twitter(config)
+client.post('statuses/update', {status: 'I Love Twitter'},  function(error, tweet, response) {
+    if(error) throw error;
+    console.log(tweet);  // Tweet body.
+    console.log(response);  // Raw response object.
+  });
