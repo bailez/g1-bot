@@ -1,8 +1,11 @@
 const functions = require('firebase-functions');
+var twit = require('Twit');
+var config = require('./config.js');
+var Twitter = new twit(config);
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+var admin = require('firebase-admin')
+admin.initializeApp(functions.config().firebase)    
+
+exports.showTwitter = functions.https.onRequest((request, response) => {
+    response.send(Twitter);
+    });
