@@ -1,5 +1,5 @@
 const functions = require('firebase-functions');
-var twit = require('Twit');
+var twit = require('twit');
 var config = require('./config.js');
 var Twitter = new twit(config);
 
